@@ -21,7 +21,7 @@ function Details() {
   useEffect(() => {
     var d = new Date().getDay();
     axios
-      .get(`http://localhost:3002/getAllDoctorsBasedOnDept/${position}`)
+      .get(`https://doctor-appointment-backend-7ovs.onrender.com/getAllDoctorsBasedOnDept/${position}`)
       .then((response) => {
         setDoctors(response.data[0].doctor);
         setDate(d);
