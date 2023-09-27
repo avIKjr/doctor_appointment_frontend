@@ -11,7 +11,7 @@ function Category() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allCategories")
+      .get("https://doctor-appointment-backend-7ovs.onrender.com/allCategories")
       .then(function (response) {
         setCategories(response.data);
         setLoading(false);
